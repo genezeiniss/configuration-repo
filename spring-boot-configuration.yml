@@ -1,1 +1,2 @@
-my.greeting: newly greeting from microservice specific file
+sensitive-data-type-recognizers:
+  uk-national-insurance-yml: !include uk_national_insurance_number.yml
