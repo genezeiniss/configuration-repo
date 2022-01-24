@@ -1,5 +1,6 @@
-#includes:
-#  - include uk_national_insurance_number.yml
+includes:
+  - include uk_national_insurance_number.yml
 
-#sensitive-data-type-recognizers:
-#  uk-national-insurance-yml: !include uk_national_insurance_number.yml
+sensitive-data-type-recognizers:
+recognizer:
+  masking-type: last-four-digits
