@@ -1,1 +1,25 @@
-
+recognizer:
+  data-type: UK National Insurance Number
+  patterns:
+    - regex: '(?!BG)(?!GB)(?!NK)(?!KN)(?!TN)(?!NT)(?!ZZ)(?:[A-CEGHJ-PR-TW-Z][A-CEGHJ-NPR-TW-Z])(?:\d){6}[A-D]'
+      score: 0.95
+    - regex: '(?!BG)(?!GB)(?!NK)(?!KN)(?!TN)(?!NT)(?!ZZ)(?:[A-CEGHJ-PR-TW-Z][A-CEGHJ-NPR-TW-Z])[ .\-](?:\d\s{0,1}){6}[ .\-][A-D]'
+      score: 1.5
+  anchors:
+    - anchor: 'nin'
+      score: 0.5
+    - anchor: 'ni#'
+      score: 0.95
+    - anchor: '.nin'
+      score: 1
+    - anchor: '_nin'
+      score: 1
+    - anchor: '"nin'
+      score: 1
+    - anchor: '''nin'
+      score: 1
+    - anchor: 'ni number'
+      score: 1.2
+    - anchor: 'national insurance number'
+      score: 1.5
+  missing-anchor-penalty: 0.3
