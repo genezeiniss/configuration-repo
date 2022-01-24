@@ -1,0 +1,5 @@
+includes:
+  - uk_national_insurance_number.yml
+
+recognizer:
+  masking-type: last-four-digits
