@@ -28,5 +28,6 @@ nino:
   missing-anchor-penalty: 0.3
   masking-type: last-four-digits
 
-sensitive-data-type-recognizers:
-  recognizers: ${nino}
+one: one
+
+sensitive-data-type-recognizers: ${one}
