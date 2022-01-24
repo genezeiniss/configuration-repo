@@ -3,3 +3,4 @@ includes:
 
 recognizer:
   masking-type: last-four-digits
+
