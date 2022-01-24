@@ -1,5 +1,5 @@
 includes:
-  - include uk_national_insurance_number.yml
+  - uk_national_insurance_number.yml
 
 sensitive-data-type-recognizers:
 recognizer:
